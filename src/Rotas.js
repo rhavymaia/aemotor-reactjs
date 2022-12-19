@@ -15,7 +15,7 @@ const Rotas = () => {
             <Route exact path="/redefinirsenha" element={<RedefinirSenha />} />
             <Route exact path="/cadastroprefeitura" element={<CadastroPrefeitura />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/EnviarConvite" element={<EnviarConvite />} />
+            <Route path="/enviarConvite" element={<EnviarConvite />} />
         </Routes>
        </Router>
    )
