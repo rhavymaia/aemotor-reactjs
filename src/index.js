@@ -26,8 +26,9 @@ import "./assets/scss/light-bootstrap-dashboard-react.scss?v=2.0.0";
 import "./assets/css/demo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Login from "views/Login";
-import AdminLayout from "layouts/Admin.js";
+import PrefeituraLayout from "layouts/Prefeitura.js";
 import GestorLayout from "layouts/GestorApp";
+import CadastrarPrefeitura from "views/CadastrarPrefeitura";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -35,9 +36,10 @@ root.render(
   <BrowserRouter>
     <Switch>
       <Route path="/login"><Login /></Route>
+      <Route path="/cadastroprefeitura"><CadastrarPrefeitura /></Route>
       <Route path="/gestor" render={(props) => <GestorLayout {...props} />} />
-      <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
-      <Redirect from="/" to="/admin/inicio" />
+      <Route path="/prefeitura" render={(props) => <PrefeituraLayout {...props} />} />
+      <Redirect from="/" to="prefeitura/inicio" />
     </Switch>
 
 
