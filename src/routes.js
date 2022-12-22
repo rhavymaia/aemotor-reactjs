@@ -17,12 +17,12 @@
 */
 import Inicio from "views/prefeitura/Inicio.js";
 import EditarPerfil from "views/prefeitura/EditarPerfil.js";
-import Funcionarios from "views/prefeitura/funcionarios/Funcionarios";
-import Veiculos from "views/prefeitura/veiculos/Veiculos.js";
-import Rotas from "views/prefeitura/rotas/Rotas.js";
-import Estudantes from "views/prefeitura/estudantes/Estudantes.js";
-import InstituicaoDeEnsino from "views/prefeitura/instituicaoDeEnsino/InstituicaoDeEnsino.js";
-import CadastrarEstudante from "views/prefeitura/estudantes/CadastrarEstudante";
+import Funcionarios from "views/prefeitura/Funcionarios";
+import Veiculos from "views/prefeitura/Veiculos.js";
+import Rotas from "views/prefeitura/Rotas.js";
+import Estudantes from "views/prefeitura/Estudantes.js";
+import InstituicaoDeEnsino from "views/prefeitura/InstituicaoDeEnsino.js";
+
 
 
 const dashboardRoutes = [
@@ -31,49 +31,49 @@ const dashboardRoutes = [
     name: "Início",
     icon: "nc-icon nc-grid-45 ",
     component: Inicio,
-    layout: "/admin"
+    layout: "/prefeitura"
   },
   {
     path: "/editarperfil",
     name: "Editar Perfil",
     icon: "nc-icon nc-circle-09",
     component: EditarPerfil,
-    layout: "/admin"
+    layout: "/prefeitura"
   },
   {
     path: "/veiculos",
     name: "Veículos",
     icon: "nc-icon nc-bus-front-12",
     component: Veiculos,
-    layout: "/admin"
+    layout: "/prefeitura"
   },
   {
     path: "/rotas",
     name: "Rotas",
     icon: "nc-icon nc-square-pin",
     component: Rotas,
-    layout: "/admin"
+    layout: "/prefeitura"
   },
   {
     path: "/funcionarios",
     name: "Funcionários",
     icon: "nc-icon nc-badge",
     component: Funcionarios,
-    layout: "/admin"
+    layout: "/prefeitura"
   },
   {
     path: "/estudantes",
     name: "Estudantes",
     icon: "nc-icon nc-backpack",
     component: Estudantes,
-    layout: "/admin"
+    layout: "/prefeitura"
   },
   {
     path: "/instituicaodeensino",
     name: "Instituição de Ensino",
     icon: "nc-icon nc-ruler-pencil",
     component: InstituicaoDeEnsino,
-    layout: "/admin"
+    layout: "/prefeitura"
   },
   
 

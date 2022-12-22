@@ -16,12 +16,7 @@ function EnviarConvite() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const form = e.currentTarget;
-
-    if (form.checkValidity() === false) {
-      e.preventDefault();
-    } else {
-      const campos = { email, mensagem };
+    const campos = { email, mensagem };
 
       fetch(URL + "/prefeitura/convite", {
         method: "POST",
@@ -41,7 +36,6 @@ function EnviarConvite() {
         .catch((error) => {
           console.log(error);
         });
-    }
   };
   return (
     <>

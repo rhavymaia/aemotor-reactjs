@@ -21,7 +21,6 @@ import { useLocation, Route, Switch } from "react-router-dom";
 import GestorAppNavbar from "components/Navbars/GestorAppNavbar.js";
 import Footer from "components/Footer/Footer";
 import Sidebar from "components/Sidebar/Sidebar";
-import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 import routesGestor from "routesGestor.js";
 
@@ -73,14 +72,7 @@ function GestorApp() {
           <Footer />
         </div>
       </div>
-      <FixedPlugin
-        hasImage={hasImage}
-        setHasImage={() => setHasImage(!hasImage)}
-        color={color}
-        setColor={(color) => setColor(color)}
-        image={image}
-        setImage={(image) => setImage(image)}
-      />
+
     </>
   );
 }
