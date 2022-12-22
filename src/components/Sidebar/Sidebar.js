@@ -45,7 +45,7 @@ function Sidebar({ color, image, routes }) {
             </div>
           </a>
           <a className="simple-text" href="http://www.creative-tim.com">
-            Pref. Municipal
+            Aê Motor !
           </a>
         </div>
         <Nav>
@@ -68,7 +68,9 @@ function Sidebar({ color, image, routes }) {
                     <i className={prop.icon} />
                     <p>{prop.name}</p>
                   </NavLink>
+                  
                 </li>
+                
               );
             return null;
           })}

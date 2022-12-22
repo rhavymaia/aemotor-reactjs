@@ -17,7 +17,7 @@
 */
 import React, { Component } from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
-import routes from "routes.js";
+import routesGestor from "routesGestor.js";
 import { Link } from "react-router-dom"
 function Header() {
 
@@ -34,9 +34,9 @@ function Header() {
   };
 
   const getBrandText = () => {
-    for (let i = 0; i < routes.length; i++) {
-      if (location.pathname.indexOf(routes[i].layout + routes[i].path) !== -1) {
-        return routes[i].name;
+    for (let i = 0; i < routesGestor.length; i++) {
+      if (location.pathname.indexOf(routesGestor[i].layout + routesGestor[i].path) !== -1) {
+        return routesGestor[i].name;
       }
     }
     return "Brand";

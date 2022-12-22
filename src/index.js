@@ -27,6 +27,7 @@ import "./assets/css/demo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Login from "views/Login";
 import AdminLayout from "layouts/Admin.js";
+import GestorLayout from "layouts/GestorApp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -34,6 +35,7 @@ root.render(
   <BrowserRouter>
     <Switch>
       <Route path="/login"><Login /></Route>
+      <Route path="/gestor" render={(props) => <GestorLayout {...props} />} />
       <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
       <Redirect from="/" to="/admin/inicio" />
     </Switch>

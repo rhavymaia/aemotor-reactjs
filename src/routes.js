@@ -17,11 +17,12 @@
 */
 import Inicio from "views/prefeitura/Inicio.js";
 import EditarPerfil from "views/prefeitura/EditarPerfil.js";
-import Funcionarios from "views/prefeitura/Funcionarios";
-import Veiculos from "views/prefeitura/Veiculos.js";
-import Rotas from "views/prefeitura/Rotas.js";
-import Estudantes from "views/prefeitura/Estudantes.js";
-import InstituicaoDeEnsino from "views/prefeitura/InstituicaoDeEnsino.js";
+import Funcionarios from "views/prefeitura/funcionarios/Funcionarios";
+import Veiculos from "views/prefeitura/veiculos/Veiculos.js";
+import Rotas from "views/prefeitura/rotas/Rotas.js";
+import Estudantes from "views/prefeitura/estudantes/Estudantes.js";
+import InstituicaoDeEnsino from "views/prefeitura/instituicaoDeEnsino/InstituicaoDeEnsino.js";
+import CadastrarEstudante from "views/prefeitura/estudantes/CadastrarEstudante";
 
 
 const dashboardRoutes = [
@@ -77,5 +78,9 @@ const dashboardRoutes = [
   
 
 ];
+
+
+
+
 
 export default dashboardRoutes;
